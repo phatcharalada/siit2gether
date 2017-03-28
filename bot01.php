@@ -11,12 +11,13 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
-if($arrJson['events'][0]['message']['text'] == "Hello"||"Hi"||"hello"||"hi"){
+if($arrJson['events'][0]['message']['text'] == "Y"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Welcome to SIIT2GETHER, carpool official Line for computer engineering at SIIT (CPE students).
-  Are you ready to use our services? If yes please type Y If you want to use again later please type N.";}
+  $arrPostData['messages'][0]['text'] = "Ok! Let's get start it! First, what type of you
+CPE students who have a car please type C.
+CPE students who don't have a car please type D.";}
 
 else{
   $arrPostData = array();
