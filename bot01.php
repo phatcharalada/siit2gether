@@ -19,12 +19,12 @@ if($arrJson['events'][0]['message']['text'] == "Y"){
 CPE students who have a car please type C.
 CPE students who don't have a car please type D.";}
 
-}else if($arrJson['events'][0]['message']['text'] == "C"){
+else if($arrJson['events'][0]['message']['text'] == "C"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "Please type your car brand-model, car color and motor vehicle registration.
-(E.g. Honda-Civic, Black, ตด8888)";
+(E.g. Honda-Civic, Black, ตด8888)";}
  
 
 //else{
