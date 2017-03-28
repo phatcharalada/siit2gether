@@ -23,7 +23,8 @@ else if($arrJson['events'][0]['message']['text'] == "N"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Thank you very much and see you next time (If you want to use our services again later please say Hello we will start our system to you)";}
+  $arrPostData['messages'][0]['text'] = "Thank you very much and see you next time
+  (If you want to use our services again later please say Hello we will start our system to you)";}
 
 else if($arrJson['events'][0]['message']['text'] == "Hello"){
   $arrPostData = array();
@@ -181,7 +182,8 @@ else if($arrJson['events'][0]['message']['text'] == "Q"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Thank you very much and see you next time (If you want to use our services again later please say Hello we will start our system to you)";}
+  $arrPostData['messages'][0]['text'] = "Thank you very much and see you next time
+  (If you want to use our services again later please say Hello we will start our system to you)";}
 
 //else{
 //  $arrPostData = array();
