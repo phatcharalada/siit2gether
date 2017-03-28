@@ -11,53 +11,14 @@ $arrHeader = array();
 $arrHeader[] = "Content-Type: application/json";
 $arrHeader[] = "Authorization: Bearer {$strAccessToken}";
  
-if($arrJson['events'][0]['message']['text'] == "Y"){
+if($arrJson['events'][0]['message']['text'] == "Yes"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "Ok! Let's get start it! First, what type of you
 CPE students who have a car please type C.
 CPE students who don't have a car please type D.";
-
-}else if($arrJson['events'][0]['message']['text'] == "C"){
-  $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Please type your car brand-model, car color and motor vehicle registration.
-(E.g. Honda-Civic, Black, ตด8888)";
-  
-}else if($arrJson['events'][0]['message']['text'] == .$arrJson['events'][0]['source']['userId']){
-  $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Please select appointed time by type number following this number: 10 15 20 25 or 30 minutes.";
-  
-}else if($arrJson['events'][0]['message']['text'] == .$arrJson['events'][0]['source']['userId']){
-  $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Please select appointed place between IT&MT building type T or CIC building I for Bangkadi campus.
-And for Rangsit campus please selct between Main building type M or Activity building type A.";
-
-}else if($arrJson['events'][0]['message']['text'] == .$arrJson['events'][0]['source']['userId']){
-  $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Please select destination between Rangsit campus type R or Bangkadi campus type B.";
-
-}else if($arrJson['events'][0]['message']['text'] == .$arrJson['events'][0]['source']['userId']){
-  $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "This is all of your information that we will send to CPE students who".$arrJson['events'][0]['source']['userId'
-  &&"If you want to cancel please type Q if you want to continue please type W."];
-
-}else if($arrJson['events'][0]['message']['text'] == .$arrJson['events'][0]['source']['userId']){
-  $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "We have".$arrJson['events'][0]['source']['userId']&&"Thank you very much for using our services.";
-  
+ 
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
