@@ -16,21 +16,13 @@ if($arrJson['events'][0]['message']['text'] == "Hello"||"Hi"||"hello"||"hi"){
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "Welcome to SIIT2GETHER, carpool official Line for computer engineering at SIIT (CPE students).
-  Are you ready to use our services? If yes please type Y If you want to use again later please type N.";
+  Are you ready to use our services? If yes please type Y If you want to use again later please type N.";}
 
-}else if($arrJson['events'][0]['message']['text'] == "Y"){
+else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "OK";
- 
-}else{
-  $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "I don't understand";
-}
- 
+  $arrPostData['messages'][0]['text'] = "I don't understand";}
  
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,$strUrl);
