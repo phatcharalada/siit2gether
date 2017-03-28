@@ -22,15 +22,13 @@ if($arrJson['events'][0]['message']['text'] == "Hello"||"Hi"||"hello"||"hi"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "Ok! Let's get start it! First, what type of you
-CPE students who have a car please type C.
-CPE students who don't have a car please type D.";
+  $arrPostData['messages'][0]['text'] = "OK";
  
 }else{
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "ฉันไม่เข้าใจคำสั่ง";
+  $arrPostData['messages'][0]['text'] = "I don't understand";
 }
  
  
