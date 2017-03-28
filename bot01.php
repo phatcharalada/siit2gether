@@ -19,11 +19,11 @@ if($arrJson['events'][0]['message']['text'] == "Y"){
 CPE students who have a car please type C.
 CPE students who don't have a car please type D.";}
 
-else{
-  $arrPostData = array();
-  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-  $arrPostData['messages'][0]['type'] = "text";
-  $arrPostData['messages'][0]['text'] = "I don't understand";}
+//else{
+//  $arrPostData = array();
+//  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+//  $arrPostData['messages'][0]['type'] = "text";
+//  $arrPostData['messages'][0]['text'] = "I don't understand";}
  
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,$strUrl);
