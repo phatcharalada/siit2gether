@@ -19,6 +19,21 @@ if($arrJson['events'][0]['message']['text'] == "Y"){
 CPE students who have a car please type C.
 CPE students who don't have a car please type D.";}
 
+else if($arrJson['events'][0]['message']['text'] == "N"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Thank you very much and see you next time (If you want to use our services again later please say Hello we will start our system to you)";}
+
+else if($arrJson['events'][0]['message']['text'] == "Hello"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Welcome to SIIT2GETHER , official account carpool services that specially for Computer Engineering at SIIT.
+  Are you ready to start our services yet?
+  If yes please type Y
+  but if not please type N.";}
+
 else if($arrJson['events'][0]['message']['text'] == "C"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
@@ -55,7 +70,75 @@ else if($arrJson['events'][0]['message']['text'] == "10"){
   Main building type M
   Activity building type A";}
 
+else if($arrJson['events'][0]['message']['text'] == "15"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please select appointed place between
+  IT&MT building type T
+  CIC building I for Bangkadi campus.
+  And for Rangsit campus please selct between
+  Main building type M
+  Activity building type A";}
+
+else if($arrJson['events'][0]['message']['text'] == "20"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please select appointed place between
+  IT&MT building type T
+  CIC building I for Bangkadi campus.
+  And for Rangsit campus please selct between
+  Main building type M
+  Activity building type A";}
+
+else if($arrJson['events'][0]['message']['text'] == "25"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please select appointed place between
+  IT&MT building type T
+  CIC building I for Bangkadi campus.
+  And for Rangsit campus please selct between
+  Main building type M
+  Activity building type A";}
+
+else if($arrJson['events'][0]['message']['text'] == "30"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please select appointed place between
+  IT&MT building type T
+  CIC building I for Bangkadi campus.
+  And for Rangsit campus please selct between
+  Main building type M
+  Activity building type A";}
+
 else if($arrJson['events'][0]['message']['text'] == "T"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please select destination between
+  Rangsit campus type R
+  Bangkadi campus type B.";}
+
+else if($arrJson['events'][0]['message']['text'] == "I"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please select destination between
+  Rangsit campus type R
+  Bangkadi campus type B.";}
+
+else if($arrJson['events'][0]['message']['text'] == "M"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please select destination between
+  Rangsit campus type R
+  Bangkadi campus type B.";}
+
+else if($arrJson['events'][0]['message']['text'] == "A"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
@@ -75,6 +158,18 @@ else if($arrJson['events'][0]['message']['text'] == "R"){
   If you want to cancel please type Q 
   but if you want to continue please type W.";}
 
+else if($arrJson['events'][0]['message']['text'] == "B"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "This is all of your information that we will send to CPE student who don't have a car 
+  Honda-Civic, Black, ตด8888
+  with appointment time 10 m
+  for appointment place is IT&MT building
+  and the destination is Rangsit campus
+  If you want to cancel please type Q 
+  but if you want to continue please type W.";}
+
 else if($arrJson['events'][0]['message']['text'] == "W"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
@@ -82,6 +177,11 @@ else if($arrJson['events'][0]['message']['text'] == "W"){
   $arrPostData['messages'][0]['text'] = "We have Ms.Phatcharalada Dapphetthikorn,Maingam,562771707.
   Thank you very much for using our services.";}
 
+else if($arrJson['events'][0]['message']['text'] == "Q"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Thank you very much and see you next time (If you want to use our services again later please say Hello we will start our system to you)";}
 
 //else{
 //  $arrPostData = array();
