@@ -32,7 +32,7 @@ else if($arrJson['events'][0]['message']['text'] == "D"){
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "Please type your Full name, Nickname and student ID (E.g. Ms.Phatcharalada Dapphetthikorn,Maingam,5622771707)";}
 
-else if($arrJson['events'][0]['message']['text'] == "Honda-Civic, Black, ตด8888"){
+else if($arrJson['events'][0]['message']['text'] == "Honda-Civic,Black,ตด8888"){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
