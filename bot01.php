@@ -25,7 +25,63 @@ else if($arrJson['events'][0]['message']['text'] == "C"){
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "Please type your car brand-model, car color and motor vehicle registration.
 (E.g. Honda-Civic, Black, ตด8888)";}
- 
+
+else if($arrJson['events'][0]['message']['text'] == "D"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please type your Full name, Nickname and student ID (E.g. Ms.Phatcharalada Dapphetthikorn,Maingam,5622771707)";}
+
+else if($arrJson['events'][0]['message']['text'] == "Honda-Civic, Black, ตด8888"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please select appointed time by type number following this number: 10 15 20 25 or 30 minutes.";}
+
+else if($arrJson['events'][0]['message']['text'] == "Ms.Phatcharalada Dapphetthikorn,Maingam,5622771707"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please select appointed time by type number following this number: 10 15 20 25 or 30 minutes.";}
+
+else if($arrJson['events'][0]['message']['text'] == "10"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please select appointed place between
+  IT&MT building type T
+  CIC building I for Bangkadi campus.
+  And for Rangsit campus please selct between
+  Main building type M
+  Activity building type A";}
+
+else if($arrJson['events'][0]['message']['text'] == "T"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "Please select destination between
+  Rangsit campus type R
+  Bangkadi campus type B.";}
+
+else if($arrJson['events'][0]['message']['text'] == "R"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "This is all of your information that we will send to CPE student who don't have a car 
+  Honda-Civic, Black, ตด8888
+  with appointment time 10 m
+  for appointment place is IT&MT building
+  and the destination is Rangsit campus
+  If you want to cancel please type Q 
+  but if you want to continue please type W.";}
+
+else if($arrJson['events'][0]['message']['text'] == "W"){
+  $arrPostData = array();
+  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+  $arrPostData['messages'][0]['type'] = "text";
+  $arrPostData['messages'][0]['text'] = "We have Ms.Phatcharalada Dapphetthikorn,Maingam,562771707.
+  Thank you very much for using our services.";}
+
 
 //else{
 //  $arrPostData = array();
